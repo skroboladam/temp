@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(event) { 
 jQuery(document).ready(function() {
 	
 	jQuery('.lp-box-oferta .arrow').click(function(e){
@@ -11,4 +12,5 @@ jQuery(document).ready(function() {
          		jQuery(this).hide();
      		});
 	});
+});
 });
