@@ -1,14 +1,14 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
 	
-	$('.lp-box-oferta .arrow').click(function(e){
+	jQuery('.lp-box-oferta .arrow').click(function(e){
 
 		e.preventDefault();
-		var onklik = $(this).attr("onclick").match(/(\d)/g).toString();
-		$('.lp-box-oferta .arrow').removeClass('arrow-right');
-		$(this).addClass('arrow-right');
+		var onklik = jQuery(this).attr("onclick").match(/(\d)/g).toString();
+		jQuery('.lp-box-oferta .arrow').removeClass('arrow-right');
+		jQuery(this).addClass('arrow-right');
 
-		$('[id^="divContent-"]').not("#divContent-"+onklik).each(function(){
-         		$(this).hide();
+		jQuery('[id^="divContent-"]').not("#divContent-"+onklik).each(function(){
+         		jQuery(this).hide();
      		});
 	});
 });
